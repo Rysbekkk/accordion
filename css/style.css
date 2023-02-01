@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: transparent;
+  width: 100%;
+  position: fixed;
+  padding: 20px 0;
+  /* z-index: 3; */
+  transition: 0.5s;
+}
+
+.header-fixed {
+  transition: 0.5s;
+  background-color: hotpink;
+  /* padding: 15px 0; */
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav img {
+  width: 100px;
+  /* height: 50px; */
+}
+.nav {
+  display: flex;
+  list-style: none;
+  column-gap: 30px;
+}
+
+.nav li {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#main {
+  background-image: url('https://e0.pxfuel.com/wallpapers/686/304/desktop-wallpaper-instagram-3d-logo-rainbow-brickwall-creative-social-network-instagram-logo-3d-art-instagram.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.main__container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+h1 {
+  font-size: 50px;
+}
+.main__wrap p {
+  font-size: 30px;
+  width: 60%;
+  margin: 30px 0;
+}
+
+.main__wrap button {
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.section__check-scroll {
+  padding-top: 100px;
+  height: 800px;
+}

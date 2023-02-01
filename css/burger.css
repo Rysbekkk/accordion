@@ -1,0 +1,74 @@
+.mobile-btn {
+  display: none;
+  width: 55px;
+  height: 30px;
+  z-index: 3;
+}
+
+.mobile-btn span {
+  position: relative;
+  height: 3px;
+  width: 100%;
+  background-color: #000;
+}
+
+.mobile-btn span:before,
+.mobile-btn span:after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  transition: 0.5s;
+}
+
+.mobile-btn span:before {
+  top: -13px;
+}
+
+.mobile-btn span:after {
+  top: 13px;
+}
+
+/* animate burger for toggle */
+.show-mobile-btn span:before,
+.show-mobile-btn span:after {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.show-mobile-btn span:before {
+  rotate: 45deg;
+}
+
+.show-mobile-btn span:after {
+  rotate: -45deg;
+}
+
+.show-mobile-btn span {
+  background-color: transparent;
+}
+
+/* animate burger for toggle */
+
+/* backdrop */
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  backdrop-filter: blur(10px);
+  z-index: -10;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.show-backdrop {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+}
+/* backdrop */
